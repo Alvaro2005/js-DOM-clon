@@ -33,26 +33,7 @@ body {
     display: none;
 }
 
-.transfort_up {
-    transform: translateY(20%);
-}
 
-.transfort_down {
-    transform: translateY(-20%);
-}
-
-.transfort_right {
-    transform: translateX(20%);
-}
-
-.transfort_left {
-    transform: translateX(-20%);
-}
-
-.aparece {
-    opacity: 1;
-    transform: none;
-}
 
 
 /*Barra de Navegacion*/
@@ -185,6 +166,8 @@ body {
     width: 100%;
     padding: 2rem 2rem;
     background-color: rgba(241, 235, 235, 0.712);
+    opacity: 0;
+    transition: all .7s;
 }
 
 .sobre-mi-text>h2 {
@@ -211,7 +194,6 @@ body {
     list-style: none;
     text-align: center;
     margin: 2em 0rem;
-    transition: all .5s;
 }
 
 .hobbies-list>li {
@@ -226,6 +208,8 @@ body {
     height: auto;
     width: 100%;
     padding: 4rem 1.5rem;
+    opacity: 0;
+    transition: all .7s;
 }
 
 .habilidades-title {
@@ -297,9 +281,10 @@ body {
 .portafolio-card {
     position: relative;
     width: 100%;
-    margin: .8rem auto;
+    margin: .4rem auto;
     display: block;
-    transition: all .5s;
+    opacity: 0;
+    transition: all .8s;
 }
 
 .portafolio-card img {
@@ -573,6 +558,26 @@ body {
     .container-portafolio {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 5;
     }
+}
+
+.transfort_up {
+    transform: translateY(20%);
+}
+
+.transfort_down {
+    transform: translateY(-20%);
+}
+
+.transfort_right {
+    transform: translateX(20%);
+}
+
+.transfort_left {
+    transform: translateX(-20%);
+}
+
+.aparece {
+    opacity: 1;
+    transform: none;
 }
